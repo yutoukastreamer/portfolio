@@ -1,22 +1,107 @@
+/* Общие настройки страницы */
 body {
-  background: pink;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   line-height: 1.6;
+  background-color: #f8f9fb;
+  color: #222;
 }
 
-header {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-}
-
-h1, h2 {
+/* Заголовки */
+h1, h2, h3 {
   font-weight: 600;
+  margin-top: 0;
 }
 
-ul {
+/* Шапка */
+header {
+  margin-bottom: 24px;
+  padding: 24px 20px;
+  background: linear-gradient(135deg, #4c6fff, #9f7aea);
+  color: white;
+  border-radius: 12px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+header p {
+  margin: 0 0 12px 0;
+}
+
+/* Секции */
+main {
+  padding-bottom: 40px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+/* Аватар */
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* Карточки проектов */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.project-card h3 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* Кнопки */
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4c6fff;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.button:hover {
+  background-color: #384fcc;
+  transform: translateY(-1px);
+}
+
+/* Ссылки в тексте */
+a {
+  color: #4c6fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Список контактов */
+#contacts ul {
   padding-left: 20px;
 }
