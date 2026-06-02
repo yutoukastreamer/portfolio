@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yutouka.design — Case</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="description" content="Case study — Yutouka.design" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="is-ready">
+    <!-- custom cursor -->
+    <div class="cursor" aria-hidden="true">
+      <div class="cursor__ring"></div>
+      <div class="cursor__dot"></div>
+    </div>
+
+    <!-- header -->
+    <header class="site-header">
+      <a class="brand" href="index.html">Yutouka<span class="dot">.</span>design</a>
+      <nav class="nav">
+        <a class="nav-link" href="index.html#works" data-i18n="nav.works">Работы</a>
+        <a class="nav-link" href="index.html#about" data-i18n="nav.about">Обо мне</a>
+        <a class="nav-link" href="index.html#contact" data-i18n="nav.contact">Контакты</a>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="ru">RU</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="case-root">
+      <!-- case hero -->
+      <section class="case-hero wrap">
+        <a class="case-back magnetic" href="index.html#works">
+          <span>←</span><span data-i18n="case.back">Назад к работам</span>
+        </a>
+        <h1 class="case-title" id="case-title">—</h1>
+        <dl class="case-facts">
+          <div class="case-fact">
+            <dt data-i18n="case.year">Год</dt>
+            <dd id="case-year">—</dd>
+          </div>
+          <div class="case-fact">
+            <dt data-i18n="case.type">Тип</dt>
+            <dd id="case-type">—</dd>
+          </div>
+          <div class="case-fact">
+            <dt data-i18n="case.tools">Инструменты</dt>
+            <dd id="case-tools">—</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- brief + solution -->
+      <section class="case-intro wrap">
+        <div class="case-intro__grid">
+          <div class="case-block">
+            <h3 data-i18n="case.briefLabel">Задача</h3>
+            <p id="case-brief">—</p>
+          </div>
+          <div class="case-block">
+            <h3 data-i18n="case.solutionLabel">Решение</h3>
+            <p id="case-solution">—</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section class="case-gallery wrap" id="case-gallery"></section>
+
+      <!-- next project -->
+      <section class="next-project wrap">
+        <span class="eyebrow" data-i18n="case.next">Следующий проект</span>
+        <a id="case-next" href="#">—</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span class="meta">© <span id="foot-year">2025</span> Yutouka.design</span>
+        <span class="meta" data-i18n="footer.made">Дизайн и сборка — Yutouka.design</span>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/work.js"></script>
+  </body>
+</html>

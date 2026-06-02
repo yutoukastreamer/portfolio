@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yutouka.design — Designer & Specialist</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta
+      name="description"
+      content="Yutouka.design — graphic and digital design portfolio: calendars, catalogues, posters and vibe-coded websites."
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- preloader -->
+    <div class="preloader" aria-hidden="true">
+      <div>
+        <div class="preloader__brand">
+          <span>Y</span><span>u</span><span>t</span><span>o</span><span>u</span><span>k</span><span>a</span><span class="dot">.</span><span>d</span><span>e</span><span>s</span><span>i</span><span>g</span><span>n</span>
+        </div>
+        <div class="preloader__bar"><i></i></div>
+      </div>
+    </div>
+
+    <!-- custom cursor -->
+    <div class="cursor" aria-hidden="true">
+      <div class="cursor__ring"></div>
+      <div class="cursor__dot"></div>
+    </div>
+
+    <!-- header -->
+    <header class="site-header">
+      <a class="brand" href="index.html">Yutouka<span class="dot">.</span>design</a>
+      <nav class="nav">
+        <a class="nav-link" href="#works" data-i18n="nav.works">Работы</a>
+        <a class="nav-link" href="#about" data-i18n="nav.about">Обо мне</a>
+        <a class="nav-link" href="#contact" data-i18n="nav.contact">Контакты</a>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="ru">RU</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <section class="hero wrap">
+        <p class="eyebrow hero__eyebrow" data-i18n="hero.eyebrow">
+          Портфолио — Yutouka.design
+        </p>
+        <h1 class="display hero__title">
+          <span class="line"><span data-i18n="hero.line1">Дизайнер</span></span>
+          <span class="line"
+            ><span
+              ><span data-i18n="hero.line2a">и&nbsp;</span><em data-i18n="hero.line2b">специалист</em></span
+            ></span
+          >
+        </h1>
+        <div class="hero__foot">
+          <p class="hero__lead" data-i18n="hero.lead">
+            Графический и цифровой дизайн: от печатных каталогов и афиш до
+            сайтов на вайбкодинге.
+          </p>
+          <span class="scroll-cue"
+            ><i></i><span data-i18n="hero.scroll">Листай вниз</span></span
+          >
+        </div>
+      </section>
+
+      <!-- marquee -->
+      <section class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marquee-track">
+          <span>Photoshop</span><span class="star">✦</span>
+          <span>Illustrator</span><span class="star">✦</span>
+          <span>Figma</span><span class="star">✦</span>
+          <span>AI&nbsp;technologies</span><span class="star">✦</span>
+          <span data-i18n="marquee.tagline">Доступна для проектов</span><span class="star">✦</span>
+        </div>
+      </section>
+
+      <!-- works -->
+      <section class="works wrap" id="works">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-i18n="works.eyebrow">Избранное · 2024—2025</p>
+          </div>
+          <p class="meta" data-i18n="works.count">Семь проектов</p>
+        </div>
+        <div class="work-grid" id="work-grid"><!-- rendered by home.js --></div>
+      </section>
+
+      <!-- about -->
+      <section class="about" id="about">
+        <div class="wrap about__grid">
+          <div class="about__photo reveal">
+            <img src="images/my-photo.png" alt="Yutouka" />
+          </div>
+          <div class="about__body">
+            <p class="eyebrow reveal" data-i18n="about.eyebrow" style="margin-bottom: 1.2rem">
+              Обо мне
+            </p>
+            <h2 class="reveal">
+              <span data-i18n="about.title1">Начинающий дизайнер</span>
+              <span data-i18n="about.title2">с подходом </span><em data-i18n="about.title2em">специалиста</em>
+            </h2>
+            <p class="reveal" data-i18n="about.p1"></p>
+            <p class="reveal" data-i18n="about.p2"></p>
+            <div class="tools reveal">
+              <p class="eyebrow tools__label" data-i18n="about.toolsLabel">Инструменты</p>
+              <ul class="tools__list">
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Figma</li>
+                <li>AI&nbsp;technologies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact wrap" id="contact">
+        <p class="eyebrow contact__eyebrow reveal" data-i18n="contact.eyebrow">
+          Давайте поработаем
+        </p>
+        <a class="contact__mail reveal" id="contact-mail" href="#">hello@yutouka.design</a>
+        <div class="contact__socials reveal" id="contact-socials"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span class="meta">© <span id="foot-year">2025</span> Yutouka.design</span>
+        <span class="meta" data-i18n="footer.made">Дизайн и сборка — Yutouka.design</span>
+      </div>
+    </footer>
+
+    <!-- libraries (CDN, no build) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <!-- app -->
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
